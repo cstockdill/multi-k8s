@@ -20,6 +20,16 @@ after_success:
   - docker push cstockdill/multi-nginx
   - docker push cstockdill/multi-server
   - docker push cstockdill/multi-worker
-
-
- 
+    
+deploy:
+  provider: elasticbeanstalk
+  region: "us-west-2"
+  name: "multi-docker"
+  env: "MultiDocker-env"
+  bucket_name: "elasticbeanstalk-us-west-2-950262647039"
+  bucket_path: "multi-docker"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:  $AWS_SECRET_KEY
+    
