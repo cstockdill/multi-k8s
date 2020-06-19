@@ -24,7 +24,7 @@ after_success:
 deploy:
   provider: elasticbeanstalk
   region: "us-west-2"
-  name: "multi-docker2"
+  name: "multi-docker"
   env: "MultiDocker2-env"
   bucket_name: "elasticbeanstalk-us-west-2-950262647039"
   bucket_path: "multi-docker2"
