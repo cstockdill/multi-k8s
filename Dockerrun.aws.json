@@ -27,10 +27,10 @@
       "image": "cstockdill/multi-nginx",
       "hostname": "nginx",
       "essential": true,
-      "portMapping": [
+      "portMappings": [
         {
-        "HostPort": 80,
-        "ContainerPort": 80
+        "hostPort": 80,
+        "containerPort": 80
          }
         ],
        "links": ["client", "server"],
