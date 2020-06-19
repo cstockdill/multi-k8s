@@ -29,8 +29,8 @@
       "essential": true,
       "portMapping": [
         {
-        "hostPort": 80,
-        "containerPort": 80
+        "HostPort": 80,
+        "ContainerPort": 80
          }
         ],
        "links": ["client", "server"],
