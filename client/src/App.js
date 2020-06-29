@@ -17,7 +17,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React - Cliff machine, updated again. for Patrick
+          Learn React - Cliff machine, updated for Kubernetes deploy
         </a>
         <Link to="/">Home</Link>
         <Link to="/otherpage">Other page</Link>
